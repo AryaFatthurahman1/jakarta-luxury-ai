@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+@import "tailwindcss";
+=======
+@import 'tailwindcss';
+>>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+<<<<<<< HEAD
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --color-luxury-gold: #D4AF37;
+    --color-luxury-gold-light: #F4C430;
+    --color-luxury-gold-dark: #AA8C2C;
+    --color-luxury-card: #0F0F0F;
+    --color-luxury-card-hover: #1A1A1A;
+    --color-luxury-black: #050505;
+}
+
+@layer utilities {
+    .glass-card {
+        background: rgba(15, 15, 15, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid tbody(255, 255, 255, 0.08);
+    }
+    
+    .text-gold-gradient {
+        background: linear-gradient(135deg, #D4AF37 0%, #F4C430 50%, #AA8C2C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .border-gold-gradient {
+        border-image: linear-gradient(135deg, rgba(212, 175, 55, 0.5) 0%, rgba(244, 196, 48, 0.2) 100%) 1;
+    }
+=======
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+>>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
+}
