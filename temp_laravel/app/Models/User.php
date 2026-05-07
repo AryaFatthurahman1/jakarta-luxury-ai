@@ -21,14 +21,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-<<<<<<< HEAD
         'username',
         'full_name',
         'phone',
         'role',
         'avatar_url',
-=======
->>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
     ];
 
     /**

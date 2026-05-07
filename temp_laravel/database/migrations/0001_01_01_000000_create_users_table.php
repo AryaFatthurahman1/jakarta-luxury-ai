@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-<<<<<<< HEAD
             $table->string('username', 50)->unique();
             $table->string('email', 100)->unique();
             $table->string('password');
@@ -21,12 +20,6 @@ return new class extends Migration
             $table->string('phone', 20)->nullable();
             $table->enum('role', ['user', 'admin'])->default('user');
             $table->string('avatar_url')->nullable();
-=======
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
->>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
             $table->rememberToken();
             $table->timestamps();
         });

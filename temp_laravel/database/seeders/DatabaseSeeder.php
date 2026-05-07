@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
@@ -10,22 +9,11 @@ use App\Models\Destinasi;
 
 class DatabaseSeeder extends Seeder
 {
-=======
-use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-
-class DatabaseSeeder extends Seeder
-{
-    use WithoutModelEvents;
-
->>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
     /**
      * Seed the application's database.
      */
     public function run(): void
     {
-<<<<<<< HEAD
         // Users
         User::create([
             'username' => 'admin',
@@ -101,13 +89,5 @@ class DatabaseSeeder extends Seeder
         foreach ($destinations as $dest) {
             \App\Models\Destinasi::create($dest);
         }
-=======
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
->>>>>>> c23f13e (Initial Laravel setup with AI Reservation page)
     }
 }
